@@ -34,6 +34,26 @@ function Navbar_Custom() {
                 </span>
               </Navbar.Brand>
             </Nav.Item>
+
+            <Nav.Item>
+              <Button
+                variant={"outline-" + themeReverse}
+                onClick={
+                  localStorage.getItem("theme") === "light"
+                    ? () => {
+                        localStorage.setItem("theme", "dark");
+                        document.location.reload();
+                      }
+                    : () => {
+                        localStorage.setItem("theme", "light");
+                        document.location.reload();
+                      }
+                }
+              >
+                {localStorage.getItem("theme") === "light" ? "Dark" : "Light"}
+              </Button>
+            </Nav.Item>
+
             <Nav.Item>
               <Button
                 className="button-left"
