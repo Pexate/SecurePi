@@ -13,3 +13,11 @@
 .button-left {
   margin-right: 5px;
 }
+
+.light {
+  background: #f8f9fa;
+}
+
+.dark {
+  background: #212529;
+}

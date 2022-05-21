@@ -1,0 +1,23 @@
+.big-title-main {
+  font-size: 65px;
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+}
+
+.big-title-main1 {
+  transform: translate(-50.5%, -1%);
+  color: #aaa;
+}
+
+.big-title-main2 {
+  transform: translate(-50.25%, 0);
+  color: #ddd;
+}
+
+.big-title-main3 {
+  transform: translate(-50%, 1%);
+  color: white;
+}

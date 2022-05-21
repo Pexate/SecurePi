@@ -5,12 +5,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className={localStorage.getItem("theme") === "light" ? "light" : "dark"}
+    >
       <header className="App-header">
         <Navbar_Custom></Navbar_Custom>
       </header>
     </div>
   );
+}
+
+if (
+  localStorage.getItem("theme") === undefined ||
+  localStorage.getItem("theme") === null
+) {
+  localStorage.setItem("theme", "dark");
 }
 
 export default App;

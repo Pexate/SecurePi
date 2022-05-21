@@ -6,11 +6,19 @@ import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+let theme = localStorage.getItem("theme");
+
+if (theme === undefined || theme === null) {
+  theme = "dark";
+}
+
+let themeReverse = theme === "dark" ? "light" : "dark";
+
 function Navbar_Custom() {
   return (
     <div className="App">
       <header className="App-header">
-        <Navbar bg="dark" expand="lg" variant="light">
+        <Navbar bg={theme} expand="lg" variant={theme}>
           <Container>
             <Nav.Item>
               <a href="/">
@@ -22,24 +30,27 @@ function Navbar_Custom() {
               </a>
               <Navbar.Brand className="logo-text" href="/">
                 <span>
-                  <code className="logo-text">SecurePi</code>
+                  <code className={theme + " logo-text"}>SecurePi</code>
                 </span>
               </Navbar.Brand>
             </Nav.Item>
             <Nav.Item>
-              <Button className="button-left" variant="outline-light">
+              <Button
+                className="button-left"
+                variant={"outline-" + themeReverse}
+              >
                 Link your Pi
               </Button>
 
               <Button
                 className="button-left"
-                variant="outline-light"
+                variant={"outline-" + themeReverse}
                 href="/instructions"
               >
                 Instructions
               </Button>
 
-              <Button variant="outline-light">Downloads</Button>
+              <Button variant={"outline-" + themeReverse}>Downloads</Button>
             </Nav.Item>
           </Container>
         </Navbar>
