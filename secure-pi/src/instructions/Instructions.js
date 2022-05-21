@@ -13,12 +13,12 @@ if (theme === undefined || theme === null) {
 
 function App() {
   return (
-    <div className="App">
+    <div className={theme + "-bg" + " Instructions"}>
       <header className="App-header">
         <Navbar_Custom></Navbar_Custom>
       </header>
       <main className="main">
-        <PageHeader />
+        <PageHeader name="Instructions" />
         <h2 className={theme}>wow this is cool</h2>
       </main>
     </div>
