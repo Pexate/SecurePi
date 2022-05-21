@@ -13,11 +13,13 @@ function Navbar_Custom() {
         <Navbar bg="dark" expand="lg" variant="light">
           <Container>
             <Nav.Item>
-              <Image
-                rounded={true}
-                className="logo-img"
-                src="@/../pi-logo-test.svg"
-              ></Image>
+              <a href="/">
+                <Image
+                  rounded={true}
+                  className="logo-img"
+                  src="@/../pi-logo-test.svg"
+                ></Image>
+              </a>
               <Navbar.Brand className="logo-text" href="/">
                 <span>
                   <code className="logo-text">SecurePi</code>
@@ -29,7 +31,11 @@ function Navbar_Custom() {
                 Link your Pi
               </Button>
 
-              <Button className="button-left" variant="outline-light">
+              <Button
+                className="button-left"
+                variant="outline-light"
+                href="/instructions"
+              >
                 Instructions
               </Button>
 
