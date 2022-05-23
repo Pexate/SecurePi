@@ -1,0 +1,27 @@
+.logo-text {
+  color: white;
+  font-weight: 900;
+  font-size: 23px;
+}
+
+.logo-img {
+  height: 30px;
+  margin-right: 10px;
+  margin-top: -7px;
+}
+
+.button-left {
+  margin-right: 5px;
+}
+
+.light {
+  background: #f8f9fa;
+}
+
+.dark {
+  background: #212529;
+}
+
+.main-wrapper {
+  height: 100vh;
+}

@@ -58,6 +58,7 @@ function Navbar_Custom() {
               <Button
                 className="button-left"
                 variant={"outline-" + themeReverse}
+                href="/login"
               >
                 Login
               </Button>
