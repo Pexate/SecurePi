@@ -14,3 +14,18 @@
   width: 30%;
   height: 100%;
 }
+
+.textfield-dark {
+  background: #313539;
+  color: white;
+}
+
+.textfield-dark:active {
+  background: #414539;
+  color: white;
+}
+
+.textfield-dark:focus {
+  background: #414539;
+  color: white;
+}

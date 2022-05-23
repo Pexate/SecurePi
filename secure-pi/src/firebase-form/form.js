@@ -17,16 +17,44 @@ export default function BasicTextFields() {
         <Form className="form">
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>
-              <span className="text-light">Email address</span>
+              <span
+                className={
+                  localStorage.getItem("theme") === "light" ? "" : "text-light"
+                }
+              >
+                Email address
+              </span>
             </Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Control
+              className={
+                localStorage.getItem("theme") === "light"
+                  ? ""
+                  : "textfield-dark"
+              }
+              type="email"
+              placeholder="Enter email"
+            />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>
-              <span className="text-light">Password</span>
+              <span
+                className={
+                  localStorage.getItem("theme") === "light" ? "" : "text-light"
+                }
+              >
+                Password
+              </span>
             </Form.Label>
-            <Form.Control type="password" placeholder="Password" />
+            <Form.Control
+              className={
+                localStorage.getItem("theme") === "light"
+                  ? ""
+                  : "textfield-dark"
+              }
+              type="password"
+              placeholder="Password"
+            />
           </Form.Group>
           <Button variant="primary" type="submit">
             Submit
