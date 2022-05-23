@@ -1,0 +1,32 @@
+.main {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  position: relative;
+}
+
+.Downloads {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App-header {
+  height: 54px;
+}
+
+.light {
+  color: black;
+}
+
+.dark {
+  color: white;
+}
+
+.light-bg {
+  color: #f8f9fa;
+}
+
+.dark-bg {
+  color: #212529;
+}

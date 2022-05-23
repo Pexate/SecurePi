@@ -2,11 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
+import Downloads from "./downloads/Downloads.js";
 import Homepage from "./home-page/Homepage.js";
 import Instructions from "./instructions/Instructions.js";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+if (localStorage.getItem("theme") !== "light") {
+  document.getElementById("root").style.backgroundColor = "#212529";
+} else {
+  document.getElementById("root").style.backgroundColor = "#f8f9fa";
+}
 
 root.render(
   <Router>
@@ -14,6 +21,8 @@ root.render(
       <Route path="/" element={<Homepage />} />
 
       <Route path="/instructions" element={<Instructions />} />
+
+      <Route path="/downloads" element={<Downloads />} />
     </Routes>
   </Router>,
 

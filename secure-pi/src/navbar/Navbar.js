@@ -59,7 +59,7 @@ function Navbar_Custom() {
                 className="button-left"
                 variant={"outline-" + themeReverse}
               >
-                Link your Pi
+                Login
               </Button>
 
               <Button
@@ -70,7 +70,9 @@ function Navbar_Custom() {
                 Instructions
               </Button>
 
-              <Button variant={"outline-" + themeReverse}>Downloads</Button>
+              <Button variant={"outline-" + themeReverse} href="/downloads">
+                Downloads
+              </Button>
             </Nav.Item>
           </Container>
         </Navbar>
