@@ -27,8 +27,6 @@ root.render(
       <Route path="/downloads" element={<Downloads />} />
 
       <Route path="/login" element={<Loginpage />} />
-
-      <Route path="/form" element={<Form />} />
     </Routes>
   </Router>,
 

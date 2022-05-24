@@ -16,3 +16,7 @@
 .dark {
   color: white;
 }
+
+.light-text-logo {
+  color: black !important;
+}

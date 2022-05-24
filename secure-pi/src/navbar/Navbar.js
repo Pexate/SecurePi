@@ -13,7 +13,7 @@ if (theme === undefined || theme === null) {
 }
 
 let themeReverse = theme === "dark" ? "light" : "dark";
-
+console.log(theme);
 function Navbar_Custom() {
   return (
     <div className="App">
@@ -30,7 +30,9 @@ function Navbar_Custom() {
               </a>
               <Navbar.Brand className="logo-text" href="/">
                 <span>
-                  <code className={theme + " logo-text"}>SecurePi</code>
+                  <code className={theme + "-text-logo logo-text"}>
+                    SecurePi
+                  </code>
                 </span>
               </Navbar.Brand>
             </Nav.Item>

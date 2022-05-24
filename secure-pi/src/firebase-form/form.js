@@ -10,9 +10,6 @@ import PageHeader from "../page-header/PageHeader.js";
 export default function BasicTextFields() {
   return (
     <div className="main-div">
-      <div>
-        <Navbar_Custom />
-      </div>
       <div className="form-container">
         <Form className="form">
           <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -28,8 +25,8 @@ export default function BasicTextFields() {
             <Form.Control
               className={
                 localStorage.getItem("theme") === "light"
-                  ? ""
-                  : "textfield-dark"
+                  ? "input-field"
+                  : "input-field textfield-dark"
               }
               type="email"
               placeholder="Enter email"
@@ -49,16 +46,25 @@ export default function BasicTextFields() {
             <Form.Control
               className={
                 localStorage.getItem("theme") === "light"
-                  ? ""
-                  : "textfield-dark"
+                  ? "input-field"
+                  : "input-field textfield-dark"
               }
               type="password"
               placeholder="Password"
             />
           </Form.Group>
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
+          <Form.Group>
+            <Button className="login-button" variant="primary" type="submit">
+              Login
+            </Button>
+            <Button
+              className="login-button button-separator"
+              variant="light"
+              type="submit"
+            >
+              Login with Google
+            </Button>
+          </Form.Group>
         </Form>
       </div>
     </div>
