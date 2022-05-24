@@ -7,6 +7,12 @@ import Form from "react-bootstrap/Form";
 import Navbar_Custom from "../navbar/Navbar.js";
 import PageHeader from "../page-header/PageHeader.js";
 
+import {
+  auth,
+  registerWithEmailAndPassword,
+  signInWithGoogle,
+} from "./authentication.js";
+
 export default function BasicTextFields() {
   return (
     <div className="main-div">

@@ -5,9 +5,11 @@ import "./index.css";
 import Downloads from "./downloads/Downloads.js";
 import Homepage from "./home-page/Homepage.js";
 import Instructions from "./instructions/Instructions.js";
-import Loginpage from "./login-page/Loginpage.js";
+import Loginpage from "./firebase-form/login.js";
 import reportWebVitals from "./reportWebVitals";
-import Form from "./firebase-form/form.js";
+import Register from "./firebase-form/register.js";
+import Reset from "./firebase-form/reset.js";
+import Dashboard from "./firebase-form/dashboard.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -27,6 +29,12 @@ root.render(
       <Route path="/downloads" element={<Downloads />} />
 
       <Route path="/login" element={<Loginpage />} />
+
+      <Route path="/register" element={<Register />} />
+
+      <Route path="/reset" element={<Reset />} />
+
+      <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
   </Router>,
 
