@@ -31,7 +31,7 @@
 }
 
 .textfield-dark:invalid {
-  animation: shake 1s linear infinite;
+  animation: shake 0.3s linear infinite;
   background: rgba(255, 0, 0, 0.3) !important;
   outline: rgba(255, 0, 0, 0.3) solid 4px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -39,10 +39,10 @@
 
 @keyframes shake {
   33% {
-    margin-left: -3px;
+    margin-left: -1px;
   }
   77% {
-    margin-left: 3px;
+    margin-left: 1px;
   }
 }
 

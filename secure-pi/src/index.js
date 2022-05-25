@@ -5,11 +5,11 @@ import "./index.css";
 import Downloads from "./downloads/Downloads.js";
 import Homepage from "./home-page/Homepage.js";
 import Instructions from "./instructions/Instructions.js";
-import Loginpage from "./firebase-form/login.js";
+import Loginpage from "./firebase/login/login.js";
 import reportWebVitals from "./reportWebVitals";
-import Register from "./firebase-form/register.js";
-import Reset from "./firebase-form/reset.js";
-import Dashboard from "./firebase-form/dashboard.js";
+import Register from "./firebase/register/register.js";
+import Reset from "./firebase/reset/reset.js";
+import Dashboard from "./firebase/dashboard/dashboard.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
