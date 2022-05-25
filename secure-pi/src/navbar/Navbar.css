@@ -20,3 +20,11 @@
 .light-text-logo {
   color: black !important;
 }
+
+.button {
+  width: 120px;
+}
+
+code {
+  letter-spacing: -0.6px;
+}
